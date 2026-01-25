@@ -1,0 +1,2676 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "gpuType": "T4",
+      "authorship_tag": "ABX9TyP9/WBtvA9TVrdG4VhPXn9K",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU",
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "7a41f922e7e44c068fa3b3222e0aeb1c": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_a24e3fff271e4cd5a1b2b2a5ddd65bb2",
+              "IPY_MODEL_95e2235fe3d54b578d5be55350b81197",
+              "IPY_MODEL_3d97404d094f4ea9b4562622a06a1836"
+            ],
+            "layout": "IPY_MODEL_2d054507d9a4436e868228b93ce939eb"
+          }
+        },
+        "a24e3fff271e4cd5a1b2b2a5ddd65bb2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_7919dfbcbd0b4ece9b486e21c5de3122",
+            "placeholder": "​",
+            "style": "IPY_MODEL_4f575ae76dbb44d0a55581b655196f77",
+            "value": "Map: 100%"
+          }
+        },
+        "95e2235fe3d54b578d5be55350b81197": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_82129f69425c4085815e2a498a700ddd",
+            "max": 2400,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_7b54b2b89bd546909f167b0da0bd18af",
+            "value": 2400
+          }
+        },
+        "3d97404d094f4ea9b4562622a06a1836": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_92c20ab2b6dc4d50a214c49c785e9802",
+            "placeholder": "​",
+            "style": "IPY_MODEL_bc6aa4b6bda449758d05d31211bc44ea",
+            "value": " 2400/2400 [00:00&lt;00:00, 5692.54 examples/s]"
+          }
+        },
+        "2d054507d9a4436e868228b93ce939eb": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "7919dfbcbd0b4ece9b486e21c5de3122": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "4f575ae76dbb44d0a55581b655196f77": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "82129f69425c4085815e2a498a700ddd": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "7b54b2b89bd546909f167b0da0bd18af": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "92c20ab2b6dc4d50a214c49c785e9802": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "bc6aa4b6bda449758d05d31211bc44ea": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "ac1523bf83574507a86fccdcfbcfa498": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_d4d0bc039309436781e4d6638f4dcfe2",
+              "IPY_MODEL_926c9d0902714f479c17a8a1f6cf3d7e",
+              "IPY_MODEL_56adbd72c23c433e8804c4d187e63e56"
+            ],
+            "layout": "IPY_MODEL_d5f673c87f0742d48a4356264029d129"
+          }
+        },
+        "d4d0bc039309436781e4d6638f4dcfe2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_ca0dedd0586045c2888e9551cc0f9765",
+            "placeholder": "​",
+            "style": "IPY_MODEL_286b335c90e546d39ebc975bca401208",
+            "value": "Map: 100%"
+          }
+        },
+        "926c9d0902714f479c17a8a1f6cf3d7e": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_7d46d4db79db4607b1bb003509c5ad94",
+            "max": 600,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_bf67b3ba73e849f9a6bef50feb19b604",
+            "value": 600
+          }
+        },
+        "56adbd72c23c433e8804c4d187e63e56": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_73c804aa5e3648f7b54efaa1afae110e",
+            "placeholder": "​",
+            "style": "IPY_MODEL_e7be39754e7945708fde6048293455a2",
+            "value": " 600/600 [00:00&lt;00:00, 4483.19 examples/s]"
+          }
+        },
+        "d5f673c87f0742d48a4356264029d129": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "ca0dedd0586045c2888e9551cc0f9765": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "286b335c90e546d39ebc975bca401208": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "7d46d4db79db4607b1bb003509c5ad94": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "bf67b3ba73e849f9a6bef50feb19b604": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "73c804aa5e3648f7b54efaa1afae110e": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "e7be39754e7945708fde6048293455a2": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/RakshithVellulla/GenAI-NLP-Fine-Tuning-DistilBERT-for-Text-Classification/blob/main/GenAI%20NLP%20Fine-Tuning\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "LiEgNrKnWCv7"
+      },
+      "outputs": [],
+      "source": [
+        "# Install Hugging Face Accelerate for efficient training and device management\n",
+        "!pip -q install accelerate\n",
+        "\n",
+        "# Install Transformers (models + tokenizers) and Datasets (dataset utilities)\n",
+        "!pip -q install transformers datasets\n",
+        "\n",
+        "# Upgrade PyArrow which is required by Hugging Face Datasets internally\n",
+        "!pip -q install --upgrade pyarrow\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Import numpy for numerical operations\n",
+        "import numpy as np\n",
+        "\n",
+        "# Import pandas for working with tabular datasets\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Import matplotlib for plotting later if needed\n",
+        "import matplotlib.pyplot as plt\n"
+      ],
+      "metadata": {
+        "id": "JjLdwWJkXn1x"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Import torch which is the deep learning backend used by Transformers\n",
+        "import torch\n",
+        "\n",
+        "# Import tokenizer + model loaders from Hugging Face\n",
+        "from transformers import AutoTokenizer, AutoModelForSequenceClassification\n",
+        "\n",
+        "# Import training utilities\n",
+        "from transformers import Trainer, TrainingArguments\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "04pXTg3VXykX",
+        "outputId": "d0924735-0603-40bc-ce4b-78060309af1d"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "WARNING:torchao.kernel.intmm:Warning: Detected no triton, on systems without Triton certain kernels will not work\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# -------------------------------\n",
+        "# Load the emotions dataset from GitHub (RAW CSV file)\n",
+        "# -------------------------------\n",
+        "\n",
+        "# This is the raw file URL from your GitHub repo\n",
+        "data_url = \"https://raw.githubusercontent.com/RakshithVellulla/Datasets/master/Final_Emotion_Data/Final_Emotion_Data.csv\"\n",
+        "\n",
+        "# Use pandas to read the CSV file directly from the URL\n",
+        "df = pd.read_csv(data_url)\n",
+        "\n",
+        "# -------------------------------\n",
+        "# Display the first 5 rows of the dataset\n",
+        "# This helps us understand what columns exist and how the data looks\n",
+        "# -------------------------------\n",
+        "df.head()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 206
+        },
+        "id": "zZft7gknX5Dt",
+        "outputId": "2ade5328-aaf9-4e86-e170-fecb7e9bcc96"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "   Id  Emotion                                               Text\n",
+              "0   1    anger   im grabbing a minute to post i feel greedy wrong\n",
+              "1   1  sadness                            i didnt feel humiliated\n",
+              "2   2  sadness  i can go from feeling so hopeless to so damned...\n",
+              "3   4     love  i am ever feeling nostalgic about the fireplac...\n",
+              "4   5    anger                               i am feeling grouchy"
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-f0e96353-be2a-4f65-9ef9-e3506e245c94\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Id</th>\n",
+              "      <th>Emotion</th>\n",
+              "      <th>Text</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>1</td>\n",
+              "      <td>anger</td>\n",
+              "      <td>im grabbing a minute to post i feel greedy wrong</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>1</td>\n",
+              "      <td>sadness</td>\n",
+              "      <td>i didnt feel humiliated</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>2</td>\n",
+              "      <td>sadness</td>\n",
+              "      <td>i can go from feeling so hopeless to so damned...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>4</td>\n",
+              "      <td>love</td>\n",
+              "      <td>i am ever feeling nostalgic about the fireplac...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>5</td>\n",
+              "      <td>anger</td>\n",
+              "      <td>i am feeling grouchy</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-f0e96353-be2a-4f65-9ef9-e3506e245c94')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-f0e96353-be2a-4f65-9ef9-e3506e245c94 button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-f0e96353-be2a-4f65-9ef9-e3506e245c94');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "df",
+              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 56000,\n  \"fields\": [\n    {\n      \"column\": \"Id\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 16165,\n        \"min\": 1,\n        \"max\": 56000,\n        \"num_unique_values\": 55999,\n        \"samples\": [\n          52142,\n          42491,\n          24528\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Emotion\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 14,\n        \"samples\": [\n          \"worry\",\n          \"hate\",\n          \"anger\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Text\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 55796,\n        \"samples\": [\n          \"i was beginning to feel almost jaded by backpacking i guess the endless bouncing around a title comfort v cash my backpacker struggle with overland travel href http www\",\n          \"i feel artistic a href http boredwithquinn\",\n          \"i still feel so alone i just cant give you anything for you to call your own and i can feel you breathing and its keeping me awake can you feel it beating\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Install transformers for Hugging Face models and pipelines\n",
+        "!pip -q install transformers\n",
+        "\n",
+        "# Install scikit-learn for evaluation metrics\n",
+        "!pip -q install scikit-learn\n"
+      ],
+      "metadata": {
+        "id": "52E2R3rlaSPG"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Import pandas for loading CSV dataset\n",
+        "import pandas as pd\n",
+        "\n",
+        "# Import numpy for numerical operations\n",
+        "import numpy as np\n",
+        "\n",
+        "# Import Hugging Face pipeline helper\n",
+        "from transformers import pipeline\n",
+        "\n",
+        "# Import evaluation metrics from sklearn\n",
+        "from sklearn.metrics import confusion_matrix, accuracy_score, classification_report\n"
+      ],
+      "metadata": {
+        "id": "xt--tOFXbY8O"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Raw GitHub CSV URL (important: must be raw.githubusercontent.com)\n",
+        "data_url = \"https://raw.githubusercontent.com/RakshithVellulla/Datasets/master/Final_Emotion_Data/Final_Emotion_Data.csv\"\n",
+        "\n",
+        "# Load CSV into pandas DataFrame\n",
+        "emotions_data = pd.read_csv(data_url)\n",
+        "\n",
+        "# Display first few rows to inspect structure\n",
+        "emotions_data.head()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 206
+        },
+        "id": "zqFC3B_Kbal6",
+        "outputId": "dcff32af-906c-4cab-8c95-77a1e2450402"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "   Id  Emotion                                               Text\n",
+              "0   1    anger   im grabbing a minute to post i feel greedy wrong\n",
+              "1   1  sadness                            i didnt feel humiliated\n",
+              "2   2  sadness  i can go from feeling so hopeless to so damned...\n",
+              "3   4     love  i am ever feeling nostalgic about the fireplac...\n",
+              "4   5    anger                               i am feeling grouchy"
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-35c62e3a-953c-493a-97cf-f1c5924fbee4\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Id</th>\n",
+              "      <th>Emotion</th>\n",
+              "      <th>Text</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>1</td>\n",
+              "      <td>anger</td>\n",
+              "      <td>im grabbing a minute to post i feel greedy wrong</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>1</td>\n",
+              "      <td>sadness</td>\n",
+              "      <td>i didnt feel humiliated</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>2</td>\n",
+              "      <td>sadness</td>\n",
+              "      <td>i can go from feeling so hopeless to so damned...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>4</td>\n",
+              "      <td>love</td>\n",
+              "      <td>i am ever feeling nostalgic about the fireplac...</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>5</td>\n",
+              "      <td>anger</td>\n",
+              "      <td>i am feeling grouchy</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-35c62e3a-953c-493a-97cf-f1c5924fbee4')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-35c62e3a-953c-493a-97cf-f1c5924fbee4 button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-35c62e3a-953c-493a-97cf-f1c5924fbee4');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "emotions_data",
+              "summary": "{\n  \"name\": \"emotions_data\",\n  \"rows\": 56000,\n  \"fields\": [\n    {\n      \"column\": \"Id\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 16165,\n        \"min\": 1,\n        \"max\": 56000,\n        \"num_unique_values\": 55999,\n        \"samples\": [\n          52142,\n          42491,\n          24528\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Emotion\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 14,\n        \"samples\": [\n          \"worry\",\n          \"hate\",\n          \"anger\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Text\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 55796,\n        \"samples\": [\n          \"i was beginning to feel almost jaded by backpacking i guess the endless bouncing around a title comfort v cash my backpacker struggle with overland travel href http www\",\n          \"i feel artistic a href http boredwithquinn\",\n          \"i still feel so alone i just cant give you anything for you to call your own and i can feel you breathing and its keeping me awake can you feel it beating\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Print column names so we know which is text and which is label\n",
+        "print(emotions_data.columns)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "biywcDeAbggU",
+        "outputId": "25d723f5-72d1-4c3f-f4a3-4d2398a049f3"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Index(['Id', 'Emotion', 'Text'], dtype='object')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Create a text classification pipeline using pretrained DistilBERT\n",
+        "# device=0 uses GPU if available, otherwise CPU\n",
+        "classifier = pipeline(\n",
+        "    \"text-classification\",\n",
+        "    model=\"distilbert-base-uncased-finetuned-sst-2-english\",\n",
+        "    device=0 if torch.cuda.is_available() else -1\n",
+        ")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "16jkiva4blM9",
+        "outputId": "3cf924b7-14a9-4670-9aca-196762df4d24"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:94: UserWarning: \n",
+            "The secret `HF_TOKEN` does not exist in your Colab secrets.\n",
+            "To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.\n",
+            "You will be able to reuse this secret in all of your notebooks.\n",
+            "Please note that authentication is recommended but still optional to access public models or datasets.\n",
+            "  warnings.warn(\n",
+            "Device set to use cpu\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take a small random sample for quick testing\n",
+        "sample_df = emotions_data.sample(300, random_state=42)\n",
+        "\n",
+        "# Reset index for clean iteration\n",
+        "sample_df = sample_df.reset_index(drop=True)\n"
+      ],
+      "metadata": {
+        "id": "jiIBCmNCbnGK"
+      },
+      "execution_count": 10,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Store predictions here\n",
+        "predictions = []\n",
+        "\n",
+        "# Loop over each text row\n",
+        "for text in sample_df[\"Text\"]:\n",
+        "\n",
+        "    # Run the pretrained model on the text\n",
+        "    result = classifier(text)[0]\n",
+        "\n",
+        "    # result[\"label\"] is POSITIVE or NEGATIVE\n",
+        "    predictions.append(result[\"label\"])\n"
+      ],
+      "metadata": {
+        "id": "DK5F3mh3bsI-"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Simple mapping:\n",
+        "# POSITIVE → joy/love\n",
+        "# NEGATIVE → anger/sadness/fear\n",
+        "\n",
+        "def map_sentiment_to_emotion(label):\n",
+        "    if label == \"POSITIVE\":\n",
+        "        return \"joy\"\n",
+        "    else:\n",
+        "        return \"sadness\"\n",
+        "\n",
+        "# Apply mapping\n",
+        "mapped_preds = [map_sentiment_to_emotion(p) for p in predictions]\n"
+      ],
+      "metadata": {
+        "id": "PghtmAqxbuji"
+      },
+      "execution_count": 12,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Show all column names in the dataset\n",
+        "print(emotions_data.columns)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TEeywe4RcrVe",
+        "outputId": "3791bb4b-bf8a-4799-d0b6-72a3673cfd70"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Index(['Id', 'Emotion', 'Text'], dtype='object')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# True labels\n",
+        "y_true = sample_df[\"Emotion\"]\n",
+        "\n",
+        "# Calculate accuracy\n",
+        "acc = accuracy_score(y_true, mapped_preds)\n",
+        "\n",
+        "print(\"Accuracy:\", acc)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-hu5RFizc2pU",
+        "outputId": "8d5e8157-21d6-45e4-8afa-2e93bd3e10af"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Accuracy: 0.16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Compute confusion matrix\n",
+        "cm = confusion_matrix(y_true, mapped_preds)\n",
+        "\n",
+        "print(\"Confusion Matrix:\")\n",
+        "cm\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JIACIwtjc-Fd",
+        "outputId": "d9aefde7-bac4-40f1-9441-706021d9d731"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Confusion Matrix:\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 14,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  2,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  2,  0,  0,  0,  7,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  4,  0,  0,  0,  4,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0, 40,  0,  0,  0, 20,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  6,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0, 16,  0,  0,  0, 12,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0, 15,  0,  0,  0, 25,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  6,  0,  0,  0,  2,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  6,  0,  0,  0, 48,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  5,  0,  0,  0, 14,  0,  0],\n",
+              "       [ 0,  0,  0,  0,  0,  0,  0,  0,  9,  0,  0,  0, 40,  0,  0]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Print precision, recall, f1-score\n",
+        "print(classification_report(y_true, mapped_preds))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hNMhVQOMc_iP",
+        "outputId": "116cc471-b5a4-4be6-a76a-60216990340e"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "              precision    recall  f1-score   support\n",
+            "\n",
+            "       anger       0.00      0.00      0.00        14\n",
+            "     boredom       0.00      0.00      0.00         2\n",
+            "       empty       0.00      0.00      0.00         1\n",
+            "  enthusiasm       0.00      0.00      0.00         1\n",
+            "        fear       0.00      0.00      0.00         9\n",
+            "         fun       0.00      0.00      0.00         8\n",
+            "   happiness       0.00      0.00      0.00        60\n",
+            "        hate       0.00      0.00      0.00         7\n",
+            "         joy       0.00      0.00      0.00         0\n",
+            "        love       0.00      0.00      0.00        28\n",
+            "     neutral       0.00      0.00      0.00        40\n",
+            "      relief       0.00      0.00      0.00         8\n",
+            "     sadness       0.25      0.89      0.39        54\n",
+            "    surprise       0.00      0.00      0.00        19\n",
+            "       worry       0.00      0.00      0.00        49\n",
+            "\n",
+            "    accuracy                           0.16       300\n",
+            "   macro avg       0.02      0.06      0.03       300\n",
+            "weighted avg       0.04      0.16      0.07       300\n",
+            "\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n",
+            "  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n",
+            "/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n",
+            "  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n",
+            "/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n",
+            "  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n",
+            "/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n",
+            "  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n",
+            "/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.\n",
+            "  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n",
+            "/usr/local/lib/python3.12/dist-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.\n",
+            "  _warn_prf(average, modifier, f\"{metric.capitalize()} is\", len(result))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import DistilBertTokenizerFast\n",
+        "\n",
+        "# Load the tokenizer that matches DistilBERT\n",
+        "tokenizer = DistilBertTokenizerFast.from_pretrained(\n",
+        "    \"distilbert-base-uncased\"\n",
+        ")\n",
+        "\n",
+        "# Show padding token ID for confirmation\n",
+        "print(\"Pad token ID:\", tokenizer.pad_token_id)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QmTRjXedhPBq",
+        "outputId": "c33debfc-7180-469f-d7a9-f3b6ecf4b00e"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Pad token ID: 0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import DistilBertTokenizerFast\n",
+        "\n",
+        "# Load the tokenizer that matches DistilBERT\n",
+        "tokenizer = DistilBertTokenizerFast.from_pretrained(\n",
+        "    \"distilbert-base-uncased\"\n",
+        ")\n",
+        "\n",
+        "# Show padding token ID for confirmation\n",
+        "pad_token_id=tokenizer.pad_token_id\n",
+        "print(\"Pad token ID:\", pad_token_id)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cQ4ACG1zhos9",
+        "outputId": "3bcdacb4-a480-49d0-ef60-28ea6a28f027"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Pad token ID: 0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import TrainingArguments\n",
+        "\n",
+        "training_args = TrainingArguments(\n",
+        "    output_dir=\"./results\",\n",
+        "\n",
+        "    # Train only once through data (fast learning mode)\n",
+        "    num_train_epochs=1,\n",
+        "\n",
+        "    # Smaller batch sizes for CPU\n",
+        "    per_device_train_batch_size=8,\n",
+        "    per_device_eval_batch_size=8,\n",
+        "\n",
+        "    # Logs folder\n",
+        "    logging_dir=\"./logs\",\n",
+        "\n",
+        "    # Evaluate at end of epoch\n",
+        "    eval_strategy=\"epoch\",\n",
+        "\n",
+        "    # Don't save checkpoints during training\n",
+        "    save_strategy=\"no\",\n",
+        "\n",
+        "    # Disable external logging tools\n",
+        "    report_to=\"none\",\n",
+        ")\n"
+      ],
+      "metadata": {
+        "id": "FboN9t_phx8B"
+      },
+      "execution_count": 35,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import transformers\n",
+        "print(transformers.__version__)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Jx_UDD4dizZw",
+        "outputId": "1be60d26-5666-4634-854a-a0156c8b2f9b"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "4.57.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Select only the columns we need for training\n",
+        "df = emotions_data[[\"Text\", \"Emotion\"]].copy()\n",
+        "\n",
+        "# Display first rows again\n",
+        "df.head()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 206
+        },
+        "id": "4oezEsKblLCF",
+        "outputId": "ccccd268-d6c5-404a-d968-d60d3a6a5bba"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "                                                Text  Emotion\n",
+              "0   im grabbing a minute to post i feel greedy wrong    anger\n",
+              "1                            i didnt feel humiliated  sadness\n",
+              "2  i can go from feeling so hopeless to so damned...  sadness\n",
+              "3  i am ever feeling nostalgic about the fireplac...     love\n",
+              "4                               i am feeling grouchy    anger"
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-fe8c8aab-9ea8-4219-8dc6-7a94e8c1dd13\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Text</th>\n",
+              "      <th>Emotion</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>im grabbing a minute to post i feel greedy wrong</td>\n",
+              "      <td>anger</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>i didnt feel humiliated</td>\n",
+              "      <td>sadness</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>i can go from feeling so hopeless to so damned...</td>\n",
+              "      <td>sadness</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>i am ever feeling nostalgic about the fireplac...</td>\n",
+              "      <td>love</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>i am feeling grouchy</td>\n",
+              "      <td>anger</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-fe8c8aab-9ea8-4219-8dc6-7a94e8c1dd13')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-fe8c8aab-9ea8-4219-8dc6-7a94e8c1dd13 button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-fe8c8aab-9ea8-4219-8dc6-7a94e8c1dd13');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "df",
+              "summary": "{\n  \"name\": \"df\",\n  \"rows\": 56000,\n  \"fields\": [\n    {\n      \"column\": \"Text\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 55796,\n        \"samples\": [\n          \"i was beginning to feel almost jaded by backpacking i guess the endless bouncing around a title comfort v cash my backpacker struggle with overland travel href http www\",\n          \"i feel artistic a href http boredwithquinn\",\n          \"i still feel so alone i just cant give you anything for you to call your own and i can feel you breathing and its keeping me awake can you feel it beating\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Emotion\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 14,\n        \"samples\": [\n          \"worry\",\n          \"hate\",\n          \"anger\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from sklearn.preprocessing import LabelEncoder\n",
+        "\n",
+        "# Create label encoder object\n",
+        "label_encoder = LabelEncoder()\n",
+        "\n",
+        "# Convert emotion strings into integer IDs\n",
+        "df[\"label\"] = label_encoder.fit_transform(df[\"Emotion\"])\n",
+        "\n",
+        "# Check mapping between emotion names and numbers\n",
+        "label_mapping = dict(zip(label_encoder.classes_, range(len(label_encoder.classes_))))\n",
+        "print(\"Label mapping:\", label_mapping)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xxk3JP01lPFC",
+        "outputId": "9f0c1cbe-3695-442e-9bc3-6967af73b79f"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Label mapping: {'anger': 0, 'boredom': 1, 'empty': 2, 'enthusiasm': 3, 'fear': 4, 'fun': 5, 'happiness': 6, 'hate': 7, 'love': 8, 'neutral': 9, 'relief': 10, 'sadness': 11, 'surprise': 12, 'worry': 13}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take very small subset just to learn pipeline\n",
+        "df = df.sample(500, random_state=42)\n"
+      ],
+      "metadata": {
+        "id": "j6cCji8grMgg"
+      },
+      "execution_count": 32,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from sklearn.model_selection import train_test_split\n",
+        "\n",
+        "# Split dataset: 80% train, 20% test\n",
+        "train_df, test_df = train_test_split(\n",
+        "    df,\n",
+        "    test_size=0.2,\n",
+        "    random_state=42,\n",
+        "    stratify=df[\"label\"]  # keeps class balance\n",
+        ")\n",
+        "\n",
+        "print(\"Train size:\", len(train_df))\n",
+        "print(\"Test size:\", len(test_df))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zMjhkr7zlTBS",
+        "outputId": "883aeaf3-2d7c-42fb-9b9b-910c28a5d14a"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Train size: 2400\n",
+            "Test size: 600\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from datasets import Dataset\n",
+        "\n",
+        "# Convert pandas DataFrames to Hugging Face Dataset format\n",
+        "train_dataset = Dataset.from_pandas(train_df.reset_index(drop=True))\n",
+        "test_dataset = Dataset.from_pandas(test_df.reset_index(drop=True))\n"
+      ],
+      "metadata": {
+        "id": "lnfQJtc6lWdV"
+      },
+      "execution_count": 25,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Function that tokenizes a batch of examples\n",
+        "def tokenize_function(examples):\n",
+        "\n",
+        "    # Tokenize the Text column\n",
+        "    return tokenizer(\n",
+        "        examples[\"Text\"],\n",
+        "        padding=\"max_length\",   # pad to fixed length\n",
+        "        truncation=True,        # cut long sentences\n",
+        "        max_length=64          # max tokens per sentence\n",
+        "    )\n",
+        "\n",
+        "# Apply tokenization to train and test datasets\n",
+        "tokenized_train = train_dataset.map(tokenize_function, batched=True)\n",
+        "tokenized_test = test_dataset.map(tokenize_function, batched=True)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 81,
+          "referenced_widgets": [
+            "7a41f922e7e44c068fa3b3222e0aeb1c",
+            "a24e3fff271e4cd5a1b2b2a5ddd65bb2",
+            "95e2235fe3d54b578d5be55350b81197",
+            "3d97404d094f4ea9b4562622a06a1836",
+            "2d054507d9a4436e868228b93ce939eb",
+            "7919dfbcbd0b4ece9b486e21c5de3122",
+            "4f575ae76dbb44d0a55581b655196f77",
+            "82129f69425c4085815e2a498a700ddd",
+            "7b54b2b89bd546909f167b0da0bd18af",
+            "92c20ab2b6dc4d50a214c49c785e9802",
+            "bc6aa4b6bda449758d05d31211bc44ea",
+            "ac1523bf83574507a86fccdcfbcfa498",
+            "d4d0bc039309436781e4d6638f4dcfe2",
+            "926c9d0902714f479c17a8a1f6cf3d7e",
+            "56adbd72c23c433e8804c4d187e63e56",
+            "d5f673c87f0742d48a4356264029d129",
+            "ca0dedd0586045c2888e9551cc0f9765",
+            "286b335c90e546d39ebc975bca401208",
+            "7d46d4db79db4607b1bb003509c5ad94",
+            "bf67b3ba73e849f9a6bef50feb19b604",
+            "73c804aa5e3648f7b54efaa1afae110e",
+            "e7be39754e7945708fde6048293455a2"
+          ]
+        },
+        "id": "VtcNFQ00lbHO",
+        "outputId": "99667a9e-90df-4477-b192-047bf46eca49"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Map:   0%|          | 0/2400 [00:00<?, ? examples/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "7a41f922e7e44c068fa3b3222e0aeb1c"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Map:   0%|          | 0/600 [00:00<?, ? examples/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "ac1523bf83574507a86fccdcfbcfa498"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Remove unused columns and keep only what model needs\n",
+        "tokenized_train = tokenized_train.remove_columns([\"Text\", \"Emotion\"])\n",
+        "tokenized_test = tokenized_test.remove_columns([\"Text\", \"Emotion\"])\n",
+        "\n",
+        "# Rename \"label\" column to \"labels\" (Trainer expects this name)\n",
+        "tokenized_train = tokenized_train.rename_column(\"label\", \"labels\")\n",
+        "tokenized_test = tokenized_test.rename_column(\"label\", \"labels\")\n",
+        "\n",
+        "# Set PyTorch tensor format\n",
+        "tokenized_train.set_format(\"torch\")\n",
+        "tokenized_test.set_format(\"torch\")\n"
+      ],
+      "metadata": {
+        "id": "8tkX47Kxljn8"
+      },
+      "execution_count": 27,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "from sklearn.metrics import accuracy_score\n",
+        "\n",
+        "# Function that Trainer will use to evaluate predictions\n",
+        "def compute_metrics(eval_pred):\n",
+        "\n",
+        "    # eval_pred contains (logits, labels)\n",
+        "    logits, labels = eval_pred\n",
+        "\n",
+        "    # Convert logits to predicted class IDs\n",
+        "    preds = np.argmax(logits, axis=1)\n",
+        "\n",
+        "    # Compute accuracy\n",
+        "    acc = accuracy_score(labels, preds)\n",
+        "\n",
+        "    return {\"accuracy\": acc}\n"
+      ],
+      "metadata": {
+        "id": "puIziBbfllBK"
+      },
+      "execution_count": 28,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import DistilBertForSequenceClassification\n",
+        "\n",
+        "# Number of unique emotion classes\n",
+        "num_labels = df[\"Emotion\"].nunique()\n",
+        "\n",
+        "# Load DistilBERT with classification head\n",
+        "model = DistilBertForSequenceClassification.from_pretrained(\n",
+        "    \"distilbert-base-uncased\",\n",
+        "    num_labels=num_labels,\n",
+        "    pad_token_id=tokenizer.pad_token_id\n",
+        ")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hEOw83FAnPg6",
+        "outputId": "9461a73d-a732-4fac-e37b-5f7780e0dd50"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight', 'pre_classifier.bias', 'pre_classifier.weight']\n",
+            "You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from transformers import Trainer\n",
+        "\n",
+        "# Create Trainer object which controls training and evaluation\n",
+        "trainer = Trainer(\n",
+        "\n",
+        "    # The DistilBERT classification model\n",
+        "    model=model,\n",
+        "\n",
+        "    # Training configuration we created earlier\n",
+        "    args=training_args,\n",
+        "\n",
+        "\n",
+        "    # Training dataset (tokenized + tensors)\n",
+        "    train_dataset=tokenized_train,\n",
+        "\n",
+        "    # Evaluation dataset\n",
+        "    eval_dataset=tokenized_test,\n",
+        "\n",
+        "    # Function used to compute metrics like accuracy\n",
+        "    compute_metrics=compute_metrics,\n",
+        "\n",
+        "    # Tokenizer is passed so Trainer can save it with model\n",
+        "    tokenizer=tokenizer,\n",
+        ")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mu3-319Im6yh",
+        "outputId": "de86b85f-3363-4337-914d-a0be2ed71878"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/tmp/ipython-input-4218521673.py:4: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.\n",
+            "  trainer = Trainer(\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "trainer.train()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 180
+        },
+        "id": "gnF5h6lAxX1X",
+        "outputId": "65af24b8-535d-4046-a949-cd7c0987d6a9"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:668: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n",
+            "  warnings.warn(warn_msg)\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "    <div>\n",
+              "      \n",
+              "      <progress value='300' max='300' style='width:300px; height:20px; vertical-align: middle;'></progress>\n",
+              "      [300/300 20:20, Epoch 1/1]\n",
+              "    </div>\n",
+              "    <table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              " <tr style=\"text-align: left;\">\n",
+              "      <th>Epoch</th>\n",
+              "      <th>Training Loss</th>\n",
+              "      <th>Validation Loss</th>\n",
+              "      <th>Accuracy</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <td>1</td>\n",
+              "      <td>No log</td>\n",
+              "      <td>1.707100</td>\n",
+              "      <td>0.408333</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table><p>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "TrainOutput(global_step=300, training_loss=1.8423238118489584, metrics={'train_runtime': 1228.0264, 'train_samples_per_second': 1.954, 'train_steps_per_second': 0.244, 'total_flos': 79497448243200.0, 'train_loss': 1.8423238118489584, 'epoch': 1.0})"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# -----------------------------\n",
+        "# Save the fine-tuned model\n",
+        "# -----------------------------\n",
+        "\n",
+        "# Directory where trained model files will be stored\n",
+        "save_directory = \"./distilbert_finetuned\"\n",
+        "\n",
+        "# Save model weights + config\n",
+        "model.save_pretrained(save_directory)\n",
+        "\n",
+        "# Save tokenizer files (VERY important to keep same tokenizer)\n",
+        "tokenizer.save_pretrained(save_directory)\n",
+        "\n",
+        "print(\"Model and tokenizer saved to:\", save_directory)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DCk2EXyd3cae",
+        "outputId": "b0c4fd3e-f206-4791-b361-b73e1f95f266"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Model and tokenizer saved to: ./distilbert_finetuned\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import shutil\n",
+        "\n",
+        "# Create zip file from model folder\n",
+        "shutil.make_archive(\n",
+        "    \"distilbert_finetuned_10k\",\n",
+        "    \"zip\",\n",
+        "    \"./distilbert_finetuned\"\n",
+        ")\n",
+        "\n",
+        "print(\"ZIP file created: distilbert_finetuned_10k.zip\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iAVd3acM3uOq",
+        "outputId": "aa0a8a6e-0804-4c84-e3ad-591be9178bc7"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ZIP file created: distilbert_finetuned_10k.zip\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import torch\n",
+        "\n",
+        "# Detect whether GPU is available; otherwise use CPU\n",
+        "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n",
+        "\n",
+        "print(\"Using device:\", device)\n",
+        "\n",
+        "# Move trained model to the chosen device\n",
+        "model.to(device)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fKMNveE-6CIa",
+        "outputId": "01e22476-eb00-4f10-8756-2c1ef8062bcc"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Using device: cpu\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "DistilBertForSequenceClassification(\n",
+              "  (distilbert): DistilBertModel(\n",
+              "    (embeddings): Embeddings(\n",
+              "      (word_embeddings): Embedding(30522, 768, padding_idx=0)\n",
+              "      (position_embeddings): Embedding(512, 768)\n",
+              "      (LayerNorm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)\n",
+              "      (dropout): Dropout(p=0.1, inplace=False)\n",
+              "    )\n",
+              "    (transformer): Transformer(\n",
+              "      (layer): ModuleList(\n",
+              "        (0-5): 6 x TransformerBlock(\n",
+              "          (attention): DistilBertSdpaAttention(\n",
+              "            (dropout): Dropout(p=0.1, inplace=False)\n",
+              "            (q_lin): Linear(in_features=768, out_features=768, bias=True)\n",
+              "            (k_lin): Linear(in_features=768, out_features=768, bias=True)\n",
+              "            (v_lin): Linear(in_features=768, out_features=768, bias=True)\n",
+              "            (out_lin): Linear(in_features=768, out_features=768, bias=True)\n",
+              "          )\n",
+              "          (sa_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)\n",
+              "          (ffn): FFN(\n",
+              "            (dropout): Dropout(p=0.1, inplace=False)\n",
+              "            (lin1): Linear(in_features=768, out_features=3072, bias=True)\n",
+              "            (lin2): Linear(in_features=3072, out_features=768, bias=True)\n",
+              "            (activation): GELUActivation()\n",
+              "          )\n",
+              "          (output_layer_norm): LayerNorm((768,), eps=1e-12, elementwise_affine=True)\n",
+              "        )\n",
+              "      )\n",
+              "    )\n",
+              "  )\n",
+              "  (pre_classifier): Linear(in_features=768, out_features=768, bias=True)\n",
+              "  (classifier): Linear(in_features=768, out_features=14, bias=True)\n",
+              "  (dropout): Dropout(p=0.2, inplace=False)\n",
+              ")"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 41
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "\n",
+        "def make_prediction(text):\n",
+        "    \"\"\"\n",
+        "    Takes a single text string and returns predicted class ID.\n",
+        "    \"\"\"\n",
+        "\n",
+        "    # Put model into evaluation mode (disables dropout, etc.)\n",
+        "    model.eval()\n",
+        "\n",
+        "    # -----------------------------\n",
+        "    # Tokenize input text\n",
+        "    # -----------------------------\n",
+        "    inputs = tokenizer(\n",
+        "        text,\n",
+        "        return_tensors=\"pt\",   # return PyTorch tensors\n",
+        "        truncation=True,\n",
+        "        padding=True,\n",
+        "        max_length=64\n",
+        "    )\n",
+        "\n",
+        "    # -----------------------------\n",
+        "    # Move inputs to same device as model (GPU/CPU)\n",
+        "    # -----------------------------\n",
+        "    inputs = {key: val.to(device) for key, val in inputs.items()}\n",
+        "\n",
+        "    # -----------------------------\n",
+        "    # Disable gradient calculation (faster inference)\n",
+        "    # -----------------------------\n",
+        "    with torch.no_grad():\n",
+        "        outputs = model(**inputs)\n",
+        "\n",
+        "    # -----------------------------\n",
+        "    # Extract logits (raw prediction scores)\n",
+        "    # -----------------------------\n",
+        "    logits = outputs.logits\n",
+        "\n",
+        "    # -----------------------------\n",
+        "    # Pick class with highest score\n",
+        "    # -----------------------------\n",
+        "    predicted_class_id = torch.argmax(logits, dim=1)\n",
+        "\n",
+        "    # -----------------------------\n",
+        "    # Move result back to CPU and convert to numpy\n",
+        "    # -----------------------------\n",
+        "    return predicted_class_id.cpu().numpy()\n"
+      ],
+      "metadata": {
+        "id": "BTCxgmVo6D8J"
+      },
+      "execution_count": 42,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take a small sample for evaluation\n",
+        "sample_data = df.sample(200, random_state=42).copy()\n",
+        "\n",
+        "# Apply prediction function to Text column\n",
+        "sample_data[\"finetuned_predicted\"] = sample_data[\"Text\"].apply(\n",
+        "    lambda x: make_prediction(x)[0]\n",
+        ")\n",
+        "\n",
+        "sample_data.head()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 206
+        },
+        "id": "fu0puvmB6G6i",
+        "outputId": "281909e4-465d-4069-b7be-6557a1b07e4f"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "                                                    Text    Emotion  label  \\\n",
+              "8375        i feel disgusted just looking at that number      anger      0   \n",
+              "52987  Sitting down for a nice English breakfast. The...     relief     10   \n",
+              "4053   im happy there are people in this world that h...  happiness      6   \n",
+              "52759            Happy Mother's Day x3 ..Mum? I love you       love      8   \n",
+              "55832  sociology is done, english and biology left......    neutral      9   \n",
+              "\n",
+              "       finetuned_predicted  \n",
+              "8375                    11  \n",
+              "52987                    6  \n",
+              "4053                     6  \n",
+              "52759                    6  \n",
+              "55832                   13  "
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-3d47f7b3-9926-402a-a4db-293c041d3d1c\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Text</th>\n",
+              "      <th>Emotion</th>\n",
+              "      <th>label</th>\n",
+              "      <th>finetuned_predicted</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>8375</th>\n",
+              "      <td>i feel disgusted just looking at that number</td>\n",
+              "      <td>anger</td>\n",
+              "      <td>0</td>\n",
+              "      <td>11</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>52987</th>\n",
+              "      <td>Sitting down for a nice English breakfast. The...</td>\n",
+              "      <td>relief</td>\n",
+              "      <td>10</td>\n",
+              "      <td>6</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4053</th>\n",
+              "      <td>im happy there are people in this world that h...</td>\n",
+              "      <td>happiness</td>\n",
+              "      <td>6</td>\n",
+              "      <td>6</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>52759</th>\n",
+              "      <td>Happy Mother's Day x3 ..Mum? I love you</td>\n",
+              "      <td>love</td>\n",
+              "      <td>8</td>\n",
+              "      <td>6</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>55832</th>\n",
+              "      <td>sociology is done, english and biology left......</td>\n",
+              "      <td>neutral</td>\n",
+              "      <td>9</td>\n",
+              "      <td>13</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-3d47f7b3-9926-402a-a4db-293c041d3d1c')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-3d47f7b3-9926-402a-a4db-293c041d3d1c button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-3d47f7b3-9926-402a-a4db-293c041d3d1c');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "sample_data",
+              "summary": "{\n  \"name\": \"sample_data\",\n  \"rows\": 200,\n  \"fields\": [\n    {\n      \"column\": \"Text\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 199,\n        \"samples\": [\n          \"i feel all numb\",\n          \"@lilmomz Just been in that kind of mood, not reason at all. Lol, but I'll try not to be too mushy around you!  I can behave!\",\n          \"needs to write term paper by monday  busy tonight, busy tomorrow, busy sunday  shit. i need to fix my priorities.\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"Emotion\",\n      \"properties\": {\n        \"dtype\": \"category\",\n        \"num_unique_values\": 14,\n        \"samples\": [\n          \"empty\",\n          \"hate\",\n          \"anger\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"label\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 3,\n        \"min\": 0,\n        \"max\": 13,\n        \"num_unique_values\": 14,\n        \"samples\": [\n          2,\n          7,\n          0\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"finetuned_predicted\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 3,\n        \"min\": 0,\n        \"max\": 13,\n        \"num_unique_values\": 5,\n        \"samples\": [\n          6,\n          9,\n          13\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from sklearn.metrics import confusion_matrix\n",
+        "\n",
+        "# True labels\n",
+        "y_true = sample_data[\"label\"]\n",
+        "\n",
+        "# Predicted labels\n",
+        "y_pred = sample_data[\"finetuned_predicted\"]\n",
+        "\n",
+        "# Compute confusion matrix\n",
+        "cm = confusion_matrix(y_true, y_pred)\n",
+        "\n",
+        "print(\"Confusion Matrix (Sample Data):\")\n",
+        "print(cm)\n",
+        "\n",
+        "# Compute accuracy manually from confusion matrix\n",
+        "accuracy = cm.diagonal().sum() / cm.sum()\n",
+        "\n",
+        "print(\"Accuracy (Sample Data):\", accuracy)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8iWs8b8f6OCK",
+        "outputId": "bb5af58e-0216-464c-c332-03be9f73de2f"
+      },
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Confusion Matrix (Sample Data):\n",
+            "[[ 4  0  0  0  0  0  0  0  0  0  0  4  0  0]\n",
+            " [ 0  0  0  0  0  0  0  0  0  0  0  0  0  1]\n",
+            " [ 0  0  0  0  0  0  0  0  0  0  0  0  0  2]\n",
+            " [ 0  0  0  0  0  0  2  0  0  0  0  0  0  0]\n",
+            " [ 0  0  0  0  0  0  0  0  0  0  0  3  0  0]\n",
+            " [ 0  0  0  0  0  0  6  0  0  3  0  0  0  0]\n",
+            " [ 0  0  0  0  0  0 33  0  0  2  0  0  0  2]\n",
+            " [ 0  0  0  0  0  0  0  0  0  1  0  0  0  5]\n",
+            " [ 0  0  0  0  0  0 17  0  0  1  0  0  0  0]\n",
+            " [ 0  0  0  0  0  0  4  0  0 23  0  0  0  6]\n",
+            " [ 0  0  0  0  0  0  4  0  0  1  0  1  0  0]\n",
+            " [ 0  0  0  0  0  0  1  0  0  1  0 15  0 11]\n",
+            " [ 0  0  0  0  0  0  4  0  0  2  0  1  0  3]\n",
+            " [ 0  0  0  0  0  0  5  0  0 10  0  2  0 20]]\n",
+            "Accuracy (Sample Data): 0.475\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Select large subset from full dataset\n",
+        "large_data = emotions_data.sample(5000, random_state=42).copy()\n",
+        "\n",
+        "# Encode labels again for safety\n",
+        "large_data[\"label\"] = label_encoder.transform(large_data[\"Emotion\"])\n",
+        "\n",
+        "# Run predictions\n",
+        "large_data[\"finetuned_predicted\"] = large_data[\"Text\"].apply(\n",
+        "    lambda x: make_prediction(x)[0]\n",
+        ")\n",
+        "\n",
+        "# Confusion matrix for large dataset\n",
+        "cm_large = confusion_matrix(\n",
+        "    large_data[\"label\"],\n",
+        "    large_data[\"finetuned_predicted\"]\n",
+        ")\n",
+        "\n",
+        "print(\"Confusion Matrix (Large Data):\")\n",
+        "print(cm_large)\n",
+        "\n",
+        "# Accuracy for large dataset\n",
+        "accuracy_large = cm_large.diagonal().sum() / cm_large.sum()\n",
+        "\n",
+        "print(\"Accuracy (Large Data):\", accuracy_large)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uvwCiY7d6RMB",
+        "outputId": "0d37707a-bdd5-4b26-fdf8-b97486bc8b1d"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Confusion Matrix (Large Data):\n",
+            "[[ 67   0   0   0   1   0   8   0   0   2   0 114   0   5]\n",
+            " [  0   0   0   0   0   0   1   0   0   3   0   1   0   8]\n",
+            " [  0   0   0   0   0   0   5   0   0  19   0   0   0  30]\n",
+            " [  0   0   0   0   0   0  27   0   0  33   0   1   0  17]\n",
+            " [ 19   0   0   0   7   0   9   0   0   1   0 124   0   2]\n",
+            " [  0   0   0   0   0   0  62   0   0  46   0   2   0  39]\n",
+            " [  1   0   0   0   0   0 752   0   3 105   0  26   0  43]\n",
+            " [  0   0   0   0   0   0   6   0   0  13   0  21   0  76]\n",
+            " [  2   0   0   0   0   0 320   0  16  54   0  17   0  35]\n",
+            " [  1   0   0   0   0   0 134   0   1 461   0  12   0 221]\n",
+            " [  0   0   0   0   0   0  53   0   2  43   0   4   0  25]\n",
+            " [  3   0   0   0   0   0  47   0   1  67   0 472   0 299]\n",
+            " [  1   0   0   0   0   0  90   0   0  56   0  19   0  75]\n",
+            " [  0   0   0   0   0   0  67   0   0 163   0  56   0 484]]\n",
+            "Accuracy (Large Data): 0.4518\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
